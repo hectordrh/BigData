@@ -1,0 +1,100 @@
+#Importamos librerias necesarias
+from pyspark.sql import SparkSession, functions as F
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import pyspark.sql.functions as F
+from pyspark.sql.functions import when, col
+import seaborn as sns
+
+# Inicializa la sesión de Spark
+spark = SparkSession.builder.appName('Tarea3').getOrCreate()
+
+# Define la ruta del archivo .csv en HDFS
+file_path = 'hdfs://localhost:9000/Tarea3/rows.csv'
+
+# Lee el archivo .csv
+df = spark.read.format('csv').option('header','true').option('inferSchema', 'true').load(file_path)
+
+#imprimimos el esquema
+df.printSchema()
+
+
+df.head()
+
+
+# Muestra las primeras filas del DataFrame
+df.show()
+
+
+# Estadisticas básicas
+df.summary().show()
+
+df.describe()
+
+
+duplicados = df.groupBy(df.columns).count().filter(F.col("count") > 1)
+df2 = df.dropDuplicates()
+
+
+## Agrupar por "Nombre_departamento" y contar los "ID_de_caso"
+casos_por_m= df2.groupBy("Nombre municipio").count()
+casos_por_m.show()
+
+
+
+fallecidos_df = df2.filter(df['Estado'] == 'Fallecido')
+numero_fallecidos = fallecidos_df.count()
+print(f"El número de fallecidos es: {numero_fallecidos}")
+
+#Fallecidos por sexo
+print(f"Numero de fallecidos por sexo")
+fallecidos_por_sexo = fallecidos_df.groupBy('Sexo').count()
+fallecidos_por_sexo.show()
+
+#
+#
+
+fallecidos_por_edad = fallecidos_df.groupBy('Edad').count()
+fallecidos_por_edad.show()
+#
+print(f"Numero de fallecidos por rango de edad")
+fallecidos_df = fallecidos_df.withColumn(
+    "RangoEdad",
+    when(col("Edad") < 20, "0-19")
+    .when((col("Edad") >= 20) & (col("Edad") < 40), "20-39")
+    .when((col("Edad") >= 40) & (col("Edad") < 60), "40-59")
+    .when((col("Edad") >= 60) & (col("Edad") < 80), "60-79")
+    .otherwise("80+")
+)
+
+# Agrupar por la nueva columna 'RangoEdad' y contar los fallecidos
+fallecidos_por_rango_edad = fallecidos_df.groupBy('RangoEdad').count()
+
+# Mostrar los resultados
+fallecidos_por_rango_edad.show()
+
+#----------------
+
+recuperados_df = df2.filter(df['Recuperado'] == 'Recuperado')
+
+# Crear una nueva columna de 'RangoEdad' basada en la columna Edad
+print(f"Numero de recuperados por rango de edad")
+recuperados_df = recuperados_df.withColumn(
+    "RangoEdad",
+    when(col("Edad") < 20, "0-19")
+    .when((col("Edad") >= 20) & (col("Edad") < 40), "20-39")
+    .when((col("Edad") >= 40) & (col("Edad") < 60), "40-59")
+    .when((col("Edad") >= 60) & (col("Edad") < 80), "60-79")
+    .otherwise("80+")
+)
+
+# Agrupar por la columna 'RangoEdad' y contar los recuperados
+recuperados_por_rango_edad = recuperados_df.groupBy('RangoEdad').count()
+
+# Mostrar los resultados
+recuperados_por_rango_edad.show()
+
+
+
+#------
