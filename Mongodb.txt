@@ -1,0 +1,225 @@
+db.productos.insertMany([
+   { nombre: "Camiseta", descripcion: "Camiseta de algodón", categoria: "Ropa", precio: 30000, stock: 100, color: "Blanco"  },   
+   { nombre: "Camiseta", descripcion: "Camiseta de algodón", categoria: "Ropa", precio: 40000, stock: 30,  color: "Negro"  },
+   { nombre: "Camiseta", descripcion: "Camiseta de algodón", categoria: "Ropa", precio: 35000, stock: 15,  color: "Azul"  },
+   { nombre: "Zapatos deportivos", descripcion: "Zapatos para correr", categoria: "Calzado", precio: 150000, stock: 50,   color: "Negro"  },
+   { nombre: "Zapatos deportivos", descripcion: "Zapatos para correr", categoria: "Calzado", precio: 150000, stock: 10,   color: "Blanco"  },
+   { nombre: "Zapatos deportivos", descripcion: "Zapatos para correr", categoria: "Calzado", precio: 150000, stock: 5,  color: "Gris"  },
+   { nombre: "Pantalón", descripcion: "Jeans", categoria: "Ropa", precio: 80000, stock: 15,   color: "Azul"  },
+   { nombre: "Pantalón", descripcion: "Jeans", categoria: "Ropa", precio: 80000, stock: 30,   color: "Negro"  },
+   { nombre: "Pantalón", descripcion: "Jeans", categoria: "Ropa", precio: 80000, stock: 50,   color: "Gris"  },
+   { nombre: "Gorra", descripcion: "Gorra Deportiva", categoria: "Accesorios", precio: 15000, stock: 50,  color: "Cafe" } ,
+   { nombre: "Gorra", descripcion: "Gorra Deportiva", categoria: "Accesorios", precio: 15000, stock: 10,  color: "Verde" } ,
+   { nombre: "Gorra", descripcion: "Gorra Deportiva", categoria: "Accesorios", precio: 15000, stock: 20,   color: "Azul" } ,
+   { nombre: "Morral", descripcion: "Morral Deportivo", categoria: "Accesorios", precio: 170000, stock: 30,  color: "Rosado" } ,
+   { nombre: "Morral", descripcion: "Morral Deportivo", categoria: "Accesorios", precio: 800000, stock: 5,   color: "Negro" } ,
+   { nombre: "Morral", descripcion: "Morral Deportivo", categoria: "Accesorios", precio: 170000, stock: 10,  color: "Azul" } ,
+   { nombre: "Chaqueta", descripcion: "Chaqueta Formal", categoria: "Ropa", precio: 230000, stock: 10,   color: "Azul" } ,
+   { nombre: "Chaqueta", descripcion: "Chaqueta Formal", categoria: "Ropa", precio: 170000, stock: 3,   color: "Verde" } ,
+   { nombre: "Chaqueta", descripcion: "Chaqueta Formal", categoria: "Ropa", precio: 200000, stock: 8,   color: "Amarillo" } ,
+   { nombre: "Blusa", descripcion: "Blusa Dama", categoria: "Ropa", precio: 50000, stock: 5,  color: "Amarillo" } ,
+   { nombre: "Blusa", descripcion: "Blusa Dama", categoria: "Ropa", precio: 40000, stock: 30,   color: "Verde" } ,
+   { nombre: "Blusa", descripcion: "Blusa Dama", categoria: "Ropa", precio: 45000, stock: 15,   color: "Rojo" } ,
+   { nombre: "Zapato formal", descripcion: "Zapatos para Oficina", categoria: "Calzado", precio: 230000, stock: 15,   color: "Negro"  },
+   { nombre: "Zapato formal", descripcion: "Zapatos para Oficina", categoria: "Calzado", precio: 170000, stock: 10,  color: "Gris"  },
+   { nombre: "Zapato formal", descripcion: "Zapatos para Oficina", categoria: "Calzado", precio: 190000, stock: 2,  color: "Blanco"  },
+   { nombre: "Short", descripcion: "Pantalon corto", categoria: "Ropa", precio: 35000, stock: 100, color: "Blanco"  },   
+   { nombre: "Short", descripcion: "Pantalon corto", categoria: "Ropa", precio: 30000, stock: 30,  color: "Negro"  },
+   { nombre: "Short", descripcion: "Pantalon corto", categoria: "Ropa", precio: 35000, stock: 15,  color: "Azul"  },
+   { nombre: "Sandalias", descripcion: "Zapatos para playa", categoria: "Calzado", precio: 25000, stock: 50,   color: "Negro"  },
+   { nombre: "Sandalias", descripcion: "Zapatos para playa", categoria: "Calzado", precio: 35000, stock: 10,   color: "Blanco"  },
+   { nombre: "Sandalias", descripcion: "Zapatos para playa", categoria: "Calzado", precio: 45000, stock: 5,  color: "Gris"  },
+   { nombre: "Pantaloneta", descripcion: "Ropa deportiva", categoria: "Ropa", precio: 15000, stock: 15,   color: "Azul"  },
+   { nombre: "Pantaloneta", descripcion: "Ropa deportiva", categoria: "Ropa", precio: 20000, stock: 30,   color: "Negro"  },
+   { nombre: "Pantaloneta", descripcion: "Ropa deportiva", categoria: "Ropa", precio: 10000, stock: 50,   color: "Gris"  },
+   { nombre: "Gafas", descripcion: "Proteccion visual", categoria: "Accesorios", precio: 85000, stock: 50,  color: "Cafe" } ,
+   { nombre: "Gafas", descripcion: "Proteccion visual", categoria: "Accesorios", precio: 75000, stock: 10,  color: "Verde" } ,
+   { nombre: "Gafas", descripcion: "Proteccion visual", categoria: "Accesorios", precio: 60000, stock: 20,   color: "Azul" } ,
+   { nombre: "bolso", descripcion: "Bolso para dama", categoria: "Accesorios", precio: 170000, stock: 30,  color: "Rosado" } ,
+   { nombre: "bolso", descripcion: "Bolso para dama", categoria: "Accesorios", precio: 800000, stock: 5,   color: "Negro" } ,
+   { nombre: "bolso", descripcion: "Bolso para dama", categoria: "Accesorios", precio: 170000, stock: 10,  color: "Azul" } ,
+   { nombre: "Buso", descripcion: "Buso cuello alto", categoria: "Ropa", precio: 80000, stock: 10,   color: "Azul" } ,
+   { nombre: "Buso", descripcion: "Buso cuello alto", categoria: "Ropa", precio: 60000, stock: 3,   color: "Verde" } ,
+   { nombre: "Buso", descripcion: "Buso cuello alto", categoria: "Ropa", precio: 65000, stock: 8,   color: "Amarillo" } ,
+   { nombre: "CroTop", descripcion: "Top Dama", categoria: "Ropa", precio: 50000, stock: 1,  color: "Amarillo" } ,
+   { nombre: "CroTop", descripcion: "Top Dama", categoria: "Ropa", precio: 40000, stock: 3,   color: "Verde" } ,
+   { nombre: "CroTop", descripcion: "Top Dama", categoria: "Ropa", precio: 45000, stock: 15,   color: "Rojo" } ,
+   { nombre: "Pantuflas", descripcion: "Zapatos para Descanso", categoria: "Calzado", precio: 25000, stock: 15,   color: "Negro"  },
+   { nombre: "Pantuflas", descripcion: "Zapatos para Descanso", categoria: "Calzado", precio: 50000, stock: 10,  color: "Gris"  },
+   { nombre: "Pantuflas", descripcion: "Zapatos para Descanso", categoria: "Calzado", precio: 45000, stock: 2,  color: "Blanco"  },
+   { nombre: "Sudadera", descripcion: "Conjunto Deportivo", categoria: "Ropa", precio: 180000, stock: 1, color: "Blanco"  },   
+   { nombre: "Sudadera", descripcion: "Conjunto Deportivo", categoria: "Ropa", precio: 170000, stock: 3,  color: "Negro"  },
+   { nombre: "Sudadera", descripcion: "Conjunto Deportivo", categoria: "Ropa", precio: 180000, stock: 15,  color: "Azul"  },
+   { nombre: "Tenis", descripcion: "Teni Formal", categoria: "Calzado", precio: 135000, stock: 50,   color: "Negro"  },
+   { nombre: "Tenis", descripcion: "Teni Formal", categoria: "Calzado", precio: 125000, stock: 10,   color: "Blanco"  },
+   { nombre: "Tenis", descripcion: "Teni Formal", categoria: "Calzado", precio: 95000, stock: 5,  color: "Gris"  },
+   { nombre: "Pantaloneta", descripcion: "Ropa deportiva", categoria: "Ropa", precio: 15000, stock: 15,   color: "Azul"  },
+   { nombre: "Pantaloneta", descripcion: "Ropa deportiva", categoria: "Ropa", precio: 20000, stock: 30,   color: "Negro"  },
+   { nombre: "Pantaloneta", descripcion: "Ropa deportiva", categoria: "Ropa", precio: 10000, stock: 50,   color: "Gris"  },
+   { nombre: "Correa", descripcion: "Correa en material sintetico", categoria: "Accesorios", precio: 35000, stock: 100,  color: "Cafe" } ,
+   { nombre: "Correa", descripcion: "Correa en material sintetico", categoria: "Accesorios", precio: 35000, stock: 80,  color: "Verde" } ,
+   { nombre: "Correa", descripcion: "Correa en material sintetico", categoria: "Accesorios", precio: 35000, stock: 1,   color: "Azul" } ,
+   { nombre: "Reloj", descripcion: "Reloj de mano", categoria: "Accesorios", precio: 75000, stock: 3,  color: "Rosado" } ,
+   { nombre: "Reloj", descripcion: "Reloj de mano", categoria: "Accesorios", precio: 95000, stock: 0,   color: "Negro" } ,
+   { nombre: "Reloj", descripcion: "Reloj de mano", categoria: "Accesorios", precio: 80000, stock: 25,  color: "Azul" } ,
+   { nombre: "Bleiser", descripcion: "Conjunto para dama", categoria: "Ropa", precio: 230000, stock: 15,   color: "Azul" } ,
+   { nombre: "Bleiser", descripcion: "Conjunto para dama", categoria: "Ropa", precio: 290000, stock: 35,   color: "Verde" } ,
+   { nombre: "Bleiser", descripcion: "Conjunto para dama", categoria: "Ropa", precio: 210000, stock: 8,   color: "Amarillo" } ,
+   { nombre: "Vestido", descripcion: "Vestido largo", categoria: "Ropa", precio: 85000, stock: 10,  color: "Amarillo" } ,
+   { nombre: "Vestido", descripcion: "Vestido largo", categoria: "Ropa", precio: 95000, stock: 30,   color: "Verde" } ,
+   { nombre: "Vestido", descripcion: "Vestido largo", categoria: "Ropa", precio: 95000, stock: 15,   color: "Rojo" } ,
+   { nombre: "botas", descripcion: "Zapato formal para dama ", categoria: "Calzado", precio: 350000, stock: 15,   color: "Negro"  },
+   { nombre: "botas", descripcion: "Zapatos formal para dama", categoria: "Calzado", precio: 330000, stock: 10,  color: "Gris"  },
+   { nombre: "botas", descripcion: "Zapatos formal para dama", categoria: "Calzado", precio: 310000, stock: 2,  color: "Blanco"  },
+   { nombre: "Sombrero", descripcion: "sombrero ala ancha", categoria: "Accesorios", precio: 55000, stock: 4,  color: "Cafe" } ,
+   { nombre: "Sombrero", descripcion: "sombrero ala ancha", categoria: "Accesorios", precio: 30000, stock: 3,  color: "Verde" } ,
+   { nombre: "Sombrero", descripcion: "sombrero ala ancha", categoria: "Accesorios", precio: 35000, stock: 1,   color: "Azul" } ,
+   { nombre: "Pijama", descripcion: "Ropa para dormir", categoria: "Ropa", precio: 75000, stock: 25,   color: "Azul"  },
+   { nombre: "Pijama", descripcion: "Ropa para dormir", categoria: "Ropa", precio: 50000, stock: 30,   color: "Negro"  },
+   { nombre: "Pijama", descripcion: "Ropa para dormir", categoria: "Ropa", precio: 60000, stock: 10,   color: "Gris"  },
+   { nombre: "Jean slim", descripcion: "jean para hombre con cremallera, tiro bajo y ajuste ceñido", categoria: "Ropa", precio: 110000, stock: 10,  color: "Azul" } ,
+   { nombre: "Jean slim", descripcion: "jean para hombre con cremallera, tiro bajo y ajuste ceñido", categoria: "Ropa", precio: 115000, stock: 30,   color: "Negro" } ,
+   { nombre: "Jean slim", descripcion: "jean para hombre con cremallera, tiro bajo y ajuste ceñido", categoria: "Ropa", precio: 120000, stock: 15,   color: "Gris" } ,
+   { nombre: "Traje formal", descripcion: "Traje de dos piezas formal para hombre ", categoria: "Ropa", precio: 250000, stock: 15,   color: "Azul" } ,
+   { nombre: "Traje formal", descripcion: "Traje de dos piezas formal para hombre ", categoria: "Ropa", precio: 280000, stock: 35,   color: "negro" } ,
+   { nombre: "Traje formal", descripcion: "Traje de dos piezas formal para hombre ", categoria: "Ropa", precio: 270000, stock: 8,   color: "Gris" } ,
+   { nombre: "Billetera", descripcion: "Billetera para dama", categoria: "Accesorios", precio: 80000, stock: 3,  color: "Rosado" } ,
+   { nombre: "Billetera", descripcion: "Billetera para dama", categoria: "Accesorios", precio: 15000, stock: 0,   color: "Negro" } ,
+   { nombre: "Billetera", descripcion: "Billetera para dama", categoria: "Accesorios", precio: 30000, stock: 25,  color: "Azul" } ,
+   { nombre: "Portadocumentos", descripcion: "Portadocumentos para hombre", categoria: "Accesorios", precio: 75000, stock: 3,  color: "Rojo" } ,
+   { nombre: "Portadocumentos", descripcion: "Portadocumentos para hombre", categoria: "Accesorios", precio: 85000, stock: 15,   color: "Negro" } ,
+   { nombre: "Portadocumentos", descripcion: "Portadocumentos para hombre", categoria: "Accesorios", precio: 95000, stock: 50,  color: "Azul" } ,
+   { nombre: "Bermuda", descripcion: "Pantalon corto para hombre", categoria: "Ropa", precio: 50000, stock: 20, color: "Blanco" },   
+   { nombre: "Bermuda", descripcion: "Pantalon corto para hombre", categoria: "Ropa", precio: 55000, stock: 8,  color: "Negro"  },
+   { nombre: "Bermuda", descripcion: "Pantalon corto para hombre", categoria: "Ropa", precio: 60000, stock: 15,  color: "Azul"  },
+   { nombre: "Mocasines", descripcion: "Zapato para hombre", categoria: "Calzado", precio: 130000, stock: 7,   color: "Negro"  },
+   { nombre: "Mocasines", descripcion: "Zapato para hombre", categoria: "Calzado", precio: 120000, stock: 25,   color: "Blanco"  },
+   { nombre: "Mocasines", descripcion: "Zapato para hombre", categoria: "Calzado", precio: 110000, stock: 1,  color: "Gris"  },
+   { nombre: "Chanclas", descripcion: "Zapato para descanso ", categoria: "Calzado", precio: 25000, stock: 15,   color: "Negro"  },
+   { nombre: "Chanclas", descripcion: "Zapato para descanso", categoria: "Calzado", precio: 30000, stock: 10,  color: "Gris"  },
+   { nombre: "Chanclas", descripcion: "Zapato para descanso", categoria: "Calzado", precio: 31000, stock: 2,  color: "Blanco"  }
+])
+
+db.categorias.insertMany([
+   { nombre: "Ropa", descripcion: "Prendas de vestir" },
+   { nombre: "Calzado", descripcion: "Calzado para toda ocasión" }
+   { nombre: "Accesorios", descripcion: "Accesorios para vestir" }
+])
+
+db.clientes.insertMany([
+{ nombre: "Juan Perez", email: "juan.perez@example.com", direccion: { calle: "Calle 123", ciudad: "Bogota", Departamento: "Bogota" },historial_compras: [] },
+   { nombre: "Carlos Ramirez", email: "carlos.ramirez@example.com", direccion: { calle: "Calle 15", ciudad: "Soacha", Departamento: "Cundinamarca" },historial_compras: [] },
+   { nombre: "Sandra Castellanos", email: "sandra.castellanos.com", direccion: { calle: "Calle 3", ciudad: "Sibate", Departamento: "Cundinamarca" },historial_compras: [] },
+   { nombre: "William Bustamante", email: "William.Bustamante.com", direccion: { calle: "Calle 8", ciudad: "Soacha", Departamento: "Cundinamarca" },historial_compras: [] },
+   { nombre: "Edison Villamil", email: "edison.villamil.com", direccion: { calle: "Calle 30", ciudad: "Fusagasuga", Departamento: "Cundinamarca" },historial_compras: [] },
+   { nombre: "Alejandro Cortes", email: "alejandro.cortes.com", direccion: { calle: "Calle 25", ciudad: "Madrid", Departamento: "Cundinamarca" },historial_compras: [] },
+   { nombre: "Valentina Cardenas", email: "valentina.cardenas.com", direccion: { calle: "Calle 80", ciudad: "Madrid", Departamento: "Cundinamarca" },historial_compras: [] },
+    { nombre: "Santiago Hernandez", email: "santiago.hernandez@example.com", direccion: { calle: "Calle 75", ciudad: "Bogota", Departamento: "Bogota" },historial_compras: [] },
+	{ nombre: "Karen sierra", email: "karen.sierra.com", direccion: { calle: "Calle 70", ciudad: "Soacha", Departamento: "Cundinamarca" },historial_compras: [] },
+	{ nombre: "Viviana Agudelo", email: "viviana.agudelo.com", direccion: { calle: "Calle 30", ciudad: "Soacha", Departamento: "Cundinamarca" },historial_compras: [] },
+	{ nombre: "Fabian Sanchez", email: "Fabian.sanchez.com", direccion: { calle: "Calle 1", ciudad: "Soacha", Departamento: "Cundinamarca" },historial_compras: [] }
+   { nombre: "Ricardo Montenegro", email: "ricardo.montenegro@example.com", direccion: { calle: "Calle 36", ciudad: "Bogota", Departamento: "Bogota" },historial_compras: [] },
+   { nombre: "Juan Valero", email: "juan.valero@example.com", direccion: { calle: "Calle 20", ciudad: "Soacha", Departamento: "Cundinamarca" },historial_compras: [] },
+   { nombre: "Javier Rojas", email: "javier.rojas@example.com", direccion: { calle: "Calle 30", ciudad: "Sibate", Departamento: "Cundinamarca" },historial_compras: [] },
+   { nombre: "Daniel Romero", email: "daniel.romero@example.com", direccion: { calle: "Calle 22", ciudad: "Soacha", Departamento: "Cundinamarca" },historial_compras: [] },
+   { nombre: "Jenifer Martinez", email: "jenifer.martinez@example.com", direccion: { calle: "Calle 50", ciudad: "Fusagasuga", Departamento: "Cundinamarca" },historial_compras: [] },
+   { nombre: "Sebastian Quintana", email: "sebastian.quintana@example.com", direccion: { calle: "Calle 25", ciudad: "Madrid", Departamento: "Cundinamarca" },historial_compras: [] }
+      
+])
+
+db.clientes.insertMany([
+{ nombre: "Daniel Cardenas", email: "daniel.cardenas@example.com", direccion: { calle: "Calle 85", ciudad: "Bogota", Departamento: "Bogota" },historial_compras: [] },
+   { nombre: "Estefania Rodriguez", email: "estefania.rodriguez@example.com", direccion: { calle: "Calle 70", ciudad: "Soacha", Departamento: "Cundinamarca" },historial_compras: [] }
+      ])
+   
+db.categorias.find()
+
+db.clientes.find({"direccion.ciudad":"Soacha"}, {nombre:1});
+
+db.clientes.find({"direccion.ciudad":"Soacha"});
+
+db.clientes.find({"direccion.calle":"Calle 70"});
+
+db.clientes.updateOne(
+    { nombre: "Sandra Castellanos" },
+    { $set: { email: "sandra.castellanos@example.com" } });
+	
+	db.clientes.updateMany(
+    { "direccion.ciudad" : "Madrid" },
+    { $set: { "direccion.ciudad": "Madrid, Cund." } }
+);
+
+db.categorias.deleteOne({ nombre: "Ropa" });
+
+db.productos.deleteMany({ nombre: "Camiseta" });
+
+db.clientes.insertMany([
+{ nombre: "Francisco Ruiz", email: "francisco.ruiz@example.com", direccion: { calle: "Calle 15", ciudad: "Bogota", Departamento: "Bogota" },historial_compras: [] },
+   { nombre: "Catalina Celis", email: "catalina.celis@example.com", direccion: { calle: "Calle 30", ciudad: "Soacha", Departamento: "Cundinamarca" },historial_compras: [] }
+      ])
+	  
+db.categorias.insertMany([
+   { nombre: "Hogar", descripcion: "Ropa para el Hogar" },
+   { nombre: "Baño", descripcion: "Ropa para baño" }
+   ])
+
+db.productos.insertMany([
+   { nombre: "Toalla", descripcion: "Toalla Grande", categoria: "Ropa para baño", precio: 40000, stock: 3, color: "Blanco"  },   
+   { nombre: "Toalla manos", descripcion: "Toalla pequeña para manos", categoria: "Ropa para baño", precio: 15000, stock: 3, color: "Blanco"  },
+   { nombre: "Toalla", descripcion: "Toalla Grande", categoria: "Ropa para baño", precio: 40000, stock: 3, color: "Azul"  },
+   { nombre: "Toalla manos", descripcion: "Toalla pequeña para manos", categoria: "Ropa para baño", precio: 15000, stock: 3, color: "Azul"  },
+   { nombre: "Juego de Sabanas", descripcion: "Juego de sabanas cama doble", categoria: "Ropa para el hogar", precio: 85000, stock: 15,  color: "Azul"  },
+   { nombre: "Juego de Sabanas", descripcion: "Juego de sabanas cama sencilla", categoria: "Ropa para el Hogar", precio: 85000, stock: 15,  color: "Azul"  },
+   { nombre: "Edredon", descripcion: "Edredon cama doble", categoria: "Ropa para el Hogar", precio: 180000, stock: 50,   color: "Negro"  },
+   { nombre: "Edredon", descripcion: "Edredon cama sencilla", categoria: "Ropa para el Hogar", precio: 180000, stock: 50,   color: "Verde"  }
+   
+      ])
+	  
+	  db.productos.find({ precio: { $gt: 200000 }, stock: { $gt: 0 } });
+	  
+	  db.clientes.find({ nombre: { $regex: "^A", $options: "i" } });
+	  
+	  db.productos.find({ precio: { $gte:10000, $lte: 30000 } });
+	  
+	  db.productos.find({ stock: { $gte:1, $lte: 5 } });
+	  
+	  db.productos.find({ color: { $in: ["Rojo", "Amarillo", "Rosado"] } });
+	  
+	  db.productos.find({
+  $and: [
+    { categoria: "Playa" },
+    { precio: { $lt: 100000 } }
+  ]
+});
+
+db.clientes.find({
+  $or: [
+    { "direccion.ciudad": "Madrid, Cund." },
+    { "direccion.ciudad": "Soacha" }
+  ]
+});
+
+db.productos.aggregate([
+   { $count: "totalProductos" }
+]);
+
+db.productos.aggregate([
+   { $group: { _id: "$categoria", totalProductos: { $sum: 1 } } }
+]);
+
+db.productos.aggregate([
+   { $group: { _id: "$categoria", precioPromedio: { $avg: "$precio" } } }
+]);
+
+db.clientes.aggregate([
+   { $count: "totalClientes" }
+]);
+
+db.clientes.aggregate([
+   { $group: { _id: "$direccion.ciudad", totalClientes: { $sum: 1 } } }
+]);
+
+db.productos.aggregate([
+   { $match: { stock: { $lt: 5 } } },
+   { $count: "productosEnRiesgo" }
+]);
